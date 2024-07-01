@@ -1,0 +1,23 @@
+/* Badge */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  flex-wrap: nowrap;
+  font-family: noto-sans, sans-serif;
+  border-radius: 15px;
+  border: solid #BBF7D0;
+  max-height: 25px;
+  margin: 7px;
+}
+
+p {
+  flex: auto;
+  font-weight: normal;
+  font-style: normal;
+  flex-wrap: nowrap;
+  padding-left: 6px;
+  padding-right: 6px;
+  margin: 0;
+}
+
