@@ -3,10 +3,12 @@
   "description": "A simple reusable badge and pill using React.js",
   "version": "1.0.0",
   "main": "index.js",
+  "repository": "https://github.com/MarvinCorro/easy-badge",
   "scripts": {
     "clean": "rm ./dist/bundle.js",
     "build-dev": "webpack serve --config ./webpack/webpack.dev.config.js --progress",
-    "build-prod": "webpack build --config ./webpack/webpack.prod.config.js --progress"
+    "build-prod": "webpack build --config ./webpack/webpack.prod.config.js --progress", 
+    "build-prod-n-test": "webpack build --config ./webpack/webpack.prod.config.js --progress && node server.js"
   },
   "keywords": [
     "blog",
