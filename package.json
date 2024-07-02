@@ -2,8 +2,8 @@
   "name": "@epiphanyzz/easy-badge",
   "description": "A simple reusable badge and pill using React.js",
   "version": "1.0.0",
-  "main": "./dist/main.js",
-  "module": "./dist/main.js",
+  "main": "./dist/bundle.js",
+  "module": "./dist/bundle.js",
   "repository": "https://github.com/MarvinCorro/easy-badge",
   "scripts": {
     "clean": "rm ./dist/bundle.js",
