@@ -48,7 +48,7 @@ app.get('*', (req, res) => {
 
 // Launch
 app.listen(app.get('port'), () => {
-    console.log('Server.js started listening on port ' + app.get('port'));
+    console.log('Server.js started listening on port localhost:' + app.get('port'));
 });
 
 module.exports = app;

@@ -1,14 +1,16 @@
 {
-  "name": "easy-badge",
+  "name": "@epiphanyzz/easy-badge",
   "description": "A simple reusable badge and pill using React.js",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "./dist/main.js",
+  "module": "./dist/main.js",
   "repository": "https://github.com/MarvinCorro/easy-badge",
   "scripts": {
     "clean": "rm ./dist/bundle.js",
     "build-dev": "webpack serve --config ./webpack/webpack.dev.config.js --progress",
     "build-prod": "webpack build --config ./webpack/webpack.prod.config.js --progress", 
-    "build-prod-n-test": "webpack build --config ./webpack/webpack.prod.config.js --progress && node server.js"
+    "build-prod-n-serve": "webpack build --config ./webpack/webpack.prod.config.js --progress && node server.js",
+    "build-library": "webpack build --config ./webpack/webpack.prod.config.js --progress"
   },
   "keywords": [
     "blog",
@@ -17,16 +19,16 @@
   "author": "Marvin Corro",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.20.2",
-    "compression": "^1.7.4",
-    "express": "^4.19.2",
-    "express-sslify": "^1.2.0",
-    "express-validator": "^7.1.0",
     "npm": "^10.8.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
+    "body-parser": "^1.20.2",
+    "compression": "^1.7.4",
+    "express": "^4.19.2",
+    "express-sslify": "^1.2.0",
+    "express-validator": "^7.1.0",
     "@babel/core": "^7.24.7",
     "@babel/preset-env": "^7.24.7",
     "@babel/preset-react": "^7.24.7",
