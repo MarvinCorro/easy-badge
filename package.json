@@ -1,12 +1,12 @@
 {
-  "name": "simple-blog-card",
-  "description": "A simple reusable blog card component using React.js",
+  "name": "easy-badge",
+  "description": "A simple reusable badge and pill using React.js",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "clean": "rm ./dist/bundle.js",
     "build-dev": "webpack serve --config ./webpack/webpack.dev.config.js --progress",
-    "build-prod": "webpack --mode production"
+    "build-prod": "webpack build --config ./webpack/webpack.prod.config.js --progress && node ./server.js"
   },
   "keywords": [
     "blog",
@@ -15,6 +15,11 @@
   "author": "Marvin Corro",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.20.2",
+    "compression": "^1.7.4",
+    "express": "^4.19.2",
+    "express-sslify": "^1.2.0",
+    "express-validator": "^7.1.0",
     "npm": "^10.8.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
@@ -37,6 +42,7 @@
     "style-loader": "^4.0.0",
     "webpack": "^5.92.1",
     "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^5.0.4"
+    "webpack-dev-server": "^5.0.4",
+    "webpack-merge": "^5.10.0"
   }
 }
